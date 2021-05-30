@@ -1,0 +1,25 @@
+    1  echo $ANDROID_HOME
+    2  echo $AIRFLOW_HOME
+    3  find airflow.cfg
+    4  cd airflow
+    5  find . -iname airflow.cfg
+    6  find .
+    7  head airflow.cfg
+    8  cat airflow.cfg
+   13  mv dag.py home/repl/airflow/dags
+   14  mv ./dags/dag.py ./dags
+   15  cd dags
+   16  ls
+
+/* Setting up Airflow
+
+In this exercise, you'll learn how to add a DAG to Airflow. To the right, you have a terminal at your disposal. The workspace comes with Airflow pre-configured, but it's easy to install on your own.
+
+You'll need to move the dag.py file containing the DAG you defined in the previous exercise to, the DAGs folder. Here are the steps to find it:
+
+    The airflow home directory is defined in the AIRFLOW_HOME environment variable. Type echo $AIRFLOW_HOME to find out.
+    In this directory, find the airflow.cfg file. Use head to read the file, and find the value of the dags_folder.
+
+Now you can find the folder and move the dag.py file there: mv ./dag.py <dags_folder>.
+
+Which files does the DAGs folder have after you moved the file? */
